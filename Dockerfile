@@ -1,15 +1,17 @@
 FROM python:3.9
 
+RUN mkdir /app
+
+RUN mkdir /app/.streamlit
+
 WORKDIR /app
 
-COPY requirements.txt ./requirements.txt
+COPY requirements.txt /app/requirements.txt
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r /app/requirements.txt
 
 EXPOSE 8501
 
 COPY . .
 
-RUN mkdir /.streamlit
-
-CMD streamlit run main.py
+CMD /app/streamlit run main.py

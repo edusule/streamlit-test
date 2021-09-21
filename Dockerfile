@@ -14,4 +14,4 @@ EXPOSE 8501
 
 COPY . .
 
-CMD /app/streamlit run main.py
+CMD /app/.streamlit run main.py

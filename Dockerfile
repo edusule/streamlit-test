@@ -10,4 +10,6 @@ EXPOSE 8501
 
 COPY . .
 
+RUN mkdir /.streamlit
+
 CMD streamlit run main.py

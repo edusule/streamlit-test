@@ -1,4 +1,4 @@
-FROM python:3.8-ubi8
+FROM python:3.3.8-ubi8
 
 WORKDIR /app
 

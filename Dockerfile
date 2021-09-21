@@ -12,4 +12,4 @@ COPY . .
 
 ENTRYPOINT ["streamlit", "run"]
 
-CMD ["main.py"]
+CMD ["app.py"]

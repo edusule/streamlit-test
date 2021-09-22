@@ -10,6 +10,8 @@ EXPOSE 8501
 
 COPY . .
 
+ENV HOME="/app"
+
 ENTRYPOINT ["streamlit", "run"]
 
 CMD ["app.py"]
